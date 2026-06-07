@@ -21,3 +21,7 @@ mdsf_data_clean <- mdsf_data %>%
                                          date_system = "modern",
                                          include_time = FALSE))
 
+# clean column names
+mdsf_data_clean <- mdsf_data_clean %>% 
+  clean_names()
+
